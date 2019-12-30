@@ -4,9 +4,9 @@ body {
 }
 
 body {
-    background-image: url(../../img/game/background_default.jpg);
+    background: url(../../img/game/background_default.jpg) center center fixed;
     background-repeat: no-repeat;
-    background-size: 1440px 821px;
+    background-size: cover;
     font-size: 16px;
     font-family: "微軟正黑體", "Microsoft JhengHei";
     font-weight: bold;
