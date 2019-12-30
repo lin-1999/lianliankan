@@ -461,6 +461,7 @@ Piece.prototype = {
         document.getElementById("time_timeMode").innerHTML = this.game.time;
         if (this.game.ReachedPair == 75) {
             this.game.isGameOver = true;
+            this.game.isShowResult = true;
         }
     },
 
