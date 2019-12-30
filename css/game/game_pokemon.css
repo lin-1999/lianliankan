@@ -21,7 +21,6 @@ body {
 
 #backgroundimg {
     width: 100%;
-    height: auto;
     margin: auto;
     position: absolute;
     top: 0;
@@ -31,16 +30,16 @@ body {
 }
 
 #whole {
-    top: 118px;
-    left: 173.6px;
-    width: 1065.14px;
-    height: 587px;
+    top: 14.3%;
+    left: 12.4%;
+    width: 74%;
+    height: 71.6%;
     position: absolute;
 }
 
 #gamePanel {
-    width: 660.375px;
-    height: 587px;
+    width: 63%;
+    height: 100%;
     position: absolute;
 }
 
@@ -60,7 +59,7 @@ body {
 }
 
 #pieces .piece {
-    top: 100px;
+    top: 18%;
     left: 33%;
     width: 38px;
     height: 38px;
@@ -85,43 +84,43 @@ body {
 }
 
 #scorePanel {
-    left: 320px;
-    top: 30px;
+    left: 30%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
 
 #score {
-    left: 425px;
-    top: 30px;
+    left: 40%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
 
 #timePanel_scoreMode {
-    left: 640px;
-    top: 30px;
+    left: 60%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
 
 #timePanel_timeMode {
-    left: 470px;
-    top: 30px;
+    left: 44%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
 
 #time_scoreMode {
-    left: 745px;
-    top: 30px;
+    left: 70%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
 
 #time_timeMode {
-    left: 570px;
-    top: 30px;
+    left: 54%;
+    top: 5%;
     position: absolute;
     font-size: 200%;
 }
