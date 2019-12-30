@@ -38,7 +38,7 @@ body {
 }
 
 #gamePanel {
-    width: 63%;
+    width: 680px;
     height: 100%;
     position: absolute;
 }
