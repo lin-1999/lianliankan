@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+html { height: 100%; display: flex; }
+
+body { margin: auto;
+	height: 80%;
+    background: #1e70ac;
+    color: #FFF;
+    text-align: center;
+}
+
+.information img{
+	width: 30px;
+	position: relative;
+	top: -70px;
+	left: 690px;
+}
