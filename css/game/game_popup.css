@@ -1,0 +1,65 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+}
+
+#gameNotOver {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#gameOver {
+    visibility: visible;
+    opacity: 1;
+}
+
+#result {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #1e70ac;
+    border-radius: 10px;
+    border: white 5px ridge;
+    width: 30%;
+    height: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    color: white;
+}
+
+.popup .popup_title {
+    margin-top: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup .close:hover {
+    color: #B22222;
+}
+
+.popup .content {
+    height: 100%;
+}
