@@ -1,0 +1,127 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url("../../img/game/background_pokemon.jpg");
+    background-repeat: no-repeat;
+    background-size: 1440px 821px;
+    font-size: 16px;
+    font-family: "微軟正黑體", "Microsoft JhengHei";
+    font-weight: bold;
+    color: white;
+}
+
+#background {
+    width: 1424px;
+    height: 821px;
+    position: absolute;
+}
+
+#backgroundimg {
+    width: 1424px;
+    height: 620px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#whole {
+    top: 118px;
+    left: 173.6px;
+    width: 1065.14px;
+    height: 587px;
+    position: absolute;
+}
+
+#gamePanel {
+    width: 660.375px;
+    height: 587px;
+    position: absolute;
+}
+
+#pieces {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+}
+
+#pic:hover {
+    background-color: yellow;
+}
+
+#pieces .piece {
+    top: 100px;
+    left: 33%;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+
+#pieces .track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#pieces .track2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background: red;
+}
+
+#scorePanel {
+    left: 320px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}
+
+#score {
+    left: 425px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}
+
+#timePanel_scoreMode {
+    left: 640px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}
+
+#timePanel_timeMode {
+    left: 470px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}
+
+#time_scoreMode {
+    left: 745px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}
+
+#time_timeMode {
+    left: 570px;
+    top: 30px;
+    position: absolute;
+    font-size: 200%;
+}

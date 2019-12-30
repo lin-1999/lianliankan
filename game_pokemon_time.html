@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>連連看</title>
+    <link rel="stylesheet" type="text/css" href="css/game/game_pokemon.css" />
+    <link rel="stylesheet" href="css/game/button.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="background"><img src="img/game/background_switch.png" id="backgroundimg">
+        <div id="whole">
+            <div id="gamePanel">
+                <div id="pieces">
+                </div>
+            </div>
+            <div id="timePanel_timeMode">
+                <span>時間 :</span>
+            </div>
+            <div id="time_timeMode">
+                <span>0</span>
+            </div>
+            <div id="homeButton">
+                <a href="index.html"><input id="home" class="button" type="button" value="首頁"></input></a>
+            </div>
+            <div id="startButton">
+                <input id="start" class="button" type="button" onclick="Start();" value="開始"></input>
+            </div>
+            <div id="resetButton">
+                <input id="reset" class="button" type="button" onclick="Reset();" value="重置"></input>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/game/map.js"></script>
+    <script type="text/javascript" src="js/game/piece_time.js"></script>
+    <script type="text/javascript" src="js/game/game_pokemon_time.js"></script>
+</body>
+
+</html>
