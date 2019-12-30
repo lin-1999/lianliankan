@@ -40,6 +40,8 @@ var Game = {
     // 圖片元素是否第一次點選
     isFirstClick: true,
     
+    isShowResult: false,
+    
     ReachedPair: 0,
 
     // 開始遊戲
@@ -50,6 +52,7 @@ var Game = {
 
         if (this.isGameReset) {
 
+            this.isShowResult = false;
             this.isGameOver = false;
             this.startTime();
 
@@ -217,9 +220,18 @@ var Game = {
     startTime: function() {
 
         var _this = this;
+        
+        if  (this.isShowResult) {
+            var popup = document.getElementById("gameNotOver");
+            var result = "";
+            result += this.score;
+            result += "分"
+            document.getElementById("result").innerHTML = result;
+            popup.setAttribute("id", "gameOver");
+        }
 
         if (this.isGameOver) {
-
+            
             return;
 
         } else {
