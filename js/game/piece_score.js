@@ -460,6 +460,7 @@ Piece.prototype = {
         
         if (this.game.ReachedPair == 75) {
             this.game.isGameOver = true;
+            this.game.isShowResult = true;
         }
     },
 
