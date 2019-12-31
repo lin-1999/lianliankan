@@ -39,12 +39,6 @@ body {
     position: absolute;
 }
 
-#gamePanel {
-    width: 680px;
-    height: 100%;
-    position: absolute;
-}
-
 #pieces {
     width: 100%;
     height: 100%;
