@@ -28,6 +28,13 @@ body {
     left: 0;
     right: 0;
 }
+#whole {
+    top: 14.3%;
+    left: 12.4%;
+    width: 74%;
+    height: 71.6%;
+    position: absolute;
+}
 
 #gamePanel {
     width: 652px;
