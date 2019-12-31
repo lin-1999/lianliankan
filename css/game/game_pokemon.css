@@ -29,11 +29,13 @@ body {
     right: 0;
 }
 
-#whole {
-    top: 14.3%;
-    left: 12.4%;
-    width: 74%;
-    height: 71.6%;
+#gamePanel {
+    width: 652px;
+    height: 456px;
+    top: 50%;
+    left: 50%;
+    margin-left: -326px;
+    margin-top: -228px;
     position: absolute;
 }
 
@@ -59,8 +61,6 @@ body {
 }
 
 #pieces .piece {
-    top: 18%;
-    left: 60%;
     width: 38px;
     height: 38px;
     position: relative;
