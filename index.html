@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-  		<title>LianLianKan</title>
+  		<title>Lianliankan</title>
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   		<link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
@@ -14,9 +14,9 @@
         <script src="js/home/home.js"></script>
 	</head>
 	<body>
-        	<div class="information"><a  href="LianLianKan-00757023+00757020.pptx"><img src="img/home/information_icon.png"></a></div>
+        <div class="information"><a href=""><img src="img/home/information_icon.png"></a></div>
 
-		<div data-splitting style = "font: normal 600 6vw/1.5 Kanit, sans-serif;">LianLianKan<span id="theme_title">default</span><img src="img/home/default.png" id="themeImg_title"></div>
+		<div data-splitting style = "font: normal 600 6vw/1.5 Kanit, sans-serif;">LianLianKan<span id="theme_title"></span><img src="img/home/default.png" id="themeImg_title"></div>
 
 		<div class="wrapper">
 
@@ -31,7 +31,7 @@
             <div class="button">
                 <span class="button__mask"></span>
                 <span class="button__text">theme</span>
-                <a class="button__text button__text--bis" href="#theme">theme</a>
+                <a class="button__text button__text--bis" href="#theme" id="choose_theme">theme</a>
             </div>
 
             <br>
@@ -39,7 +39,7 @@
             <div class="button">
                 <span class="button__mask"></span>
                 <span class="button__text">instructions</span>
-                <a class="button__text button__text--bis" href="#instructions">instructions</a>
+                <a class="button__text button__text--bis" href="#instructions" id="ins_button">instructions</a>
             </div>
 
             <br>
@@ -47,7 +47,7 @@
             <div class="button">
                 <span class="button__mask"></span>
                 <span class="button__text">developer</span>
-                <a class="button__text button__text--bis" href="#developer">developer</a>
+                <a class="button__text button__text--bis" href="#developer" id="dev_button">developer</a>
             </div>
             
             <div id="mode" class="overlay">
@@ -58,7 +58,7 @@
                         <div id="mode__button" class="button">
                             <span class="button__mask"></span>
                             <span class="button__text">Score</span>
-                            <a class="button__text button__text--bis" id="scoreHref" href="game_default_score.html">Score</a>
+                            <a class="button__text button__text--bis" id="scoreHref" onclick="playButtonSound()">Score</a>
                         </div>
                   
                         <br><br><br><br>
@@ -66,7 +66,7 @@
                         <div id="mode__button" class="button">
                             <span class="button__mask"></span>
                             <span class="button__text">Time</span>
-                            <a class="button__text button__text--bis" id="timeHref" href="game_default_time.html">Time</a>
+                            <a class="button__text button__text--bis" id="timeHref" onclick="playButtonSound()">Time</a>
                         </div>
                     </div>
                 </div>
@@ -137,6 +137,10 @@
             </div>
 
   		</div>
+        
+        <audio id="button_sound">
+            <source src="button.mp3">
+        </audio>
 
   	     <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
         <script>Splitting();</script>
