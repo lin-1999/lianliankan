@@ -167,8 +167,9 @@ var Game = {
         for (var i = 0; i < this.pieceImgList.length; i++) {
 
             this.pieceImgList[i].initImg();
-            this.pieceImgList[i].img.src = "img/game/pieces/pokemon/" + this.randomList[i] + ".png"
-            this.pieceImgList[i].img.style = "border: 1px white ridge;"
+            this.pieceImgList[i].img.src = "img/game/pieces/pokemon/" + this.randomList[i] + ".png";
+            this.pieceImgList[i].img.style = "border: 1px white ridge; cursor: pointer;";
+            this.pieceImgList[i].img.addEventListener("click", playButtonSound, false);
             this.pieceImgList[i].setImgSrc(this.pieceImgList[i].img.src);
 
             //執行圖片點選事件
