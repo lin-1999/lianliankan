@@ -12,6 +12,10 @@ function start(){
     document.getElementById("ins_button").addEventListener("click", playButtonSound, false);
     document.getElementById("dev_button").addEventListener("click", playButtonSound, false);
     document.getElementById("theme__button").addEventListener("click", playButtonSound, false);
+    document.getElementById("closeMode").addEventListener("click", close, false);
+    document.getElementById("closeTheme").addEventListener("click", close, false);
+    document.getElementById("closeIns").addEventListener("click", close, false);
+    document.getElementById("closeDev").addEventListener("click", close, false);
     document.getElementById("theme_title").innerHTML = "default";
 }
 
@@ -60,6 +64,12 @@ function play(e){
                 setTimeout(function(){ location.href = 'game_digimon_time.html'; }, 200);
             break;
     }
+}
+
+function close(){
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = '#'; }, 100);
 }
 
 function playButtonSound(){ buttonSound.play(); }
