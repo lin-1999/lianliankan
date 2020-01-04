@@ -265,23 +265,46 @@ var Game = {
 
 }
 
-window.onload = function() {
+var isPlaying;
+var back_music;
+var buttonSound;
 
+window.onload = function() {
     document.getElementById("start").disabled = false;
     document.getElementById("reset").disabled = true;
-
+    document.getElementById("home").addEventListener("click", backHome, false);
+    document.getElementById("start").addEventListener("click", playButtonSound, false);
+    document.getElementById("reset").addEventListener("click", playButtonSound, false);
+    back_music = document.getElementById("digimon_music");
+    buttonSound = document.getElementById("button_sound");
+    isPlaying = false;
 }
 
 // 遊戲開始入口
-function Start() {
-
-    Game.start();
-
-}
+function Start() { Game.start(); }
 
 // 遊戲重置入口
-function Reset() {
+function Reset() { Game.reset(); }
 
-    Game.reset();
-
+function music(){
+    buttonSound.play();
+    
+    if(!isPlaying){
+        back_music.play();
+        isPlaying = true;
+        document.getElementById("music").value = "暫停音樂";
+    }
+    else{
+        back_music.pause();
+        isPlaying = false;
+        document.getElementById("music").value = "播放音樂";
+    }
 }
+
+function backHome() {
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = 'index.html'; }, 200);
+}
+
+function playButtonSound() { buttonSound.play(); }
