@@ -275,24 +275,17 @@ window.onload = function() {
     document.getElementById("home").addEventListener("click", backHome, false);
     document.getElementById("start").addEventListener("click", playButtonSound, false);
     document.getElementById("reset").addEventListener("click", playButtonSound, false);
+    document.getElementById("oneMore").addEventListener("click", oneMoreGame, false);
     back_music = document.getElementById("pokemon_music");
     buttonSound = document.getElementById("button_sound");
     isPlaying = false;
 }
 
 // 遊戲開始入口
-function Start() {
-
-    Game.start();
-
-}
+function Start() { Game.start(); }
 
 // 遊戲重置入口
-function Reset() {
-
-    Game.reset();
-
-}
+function Reset() { Game.reset(); }
 
 function music(){
     buttonSound.play();
@@ -313,6 +306,12 @@ function backHome() {
     buttonSound.play();
     
     setTimeout(function(){ location.href = 'index.html'; }, 200);
+}
+
+function oneMoreGame() {
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = 'game_pokemon_score.html'; }, 200);
 }
 
 function playButtonSound() { buttonSound.play(); }
