@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Default - Score</title>
+    <title>連連看</title>
     <link rel="stylesheet" type="text/css" href="css/game/game_default.css" />
     <link rel="stylesheet" href="css/game/button.css">
     <link rel="stylesheet" href="css/game/game_popup.css">
@@ -34,13 +34,16 @@
                 <span>0</span>
             </div>
             <div id="homeButton">
-                <a href="index.html"><input id="home" class="button" type="button" value="首頁"></input></a>
+                <a><input id="home" class="button" type="button" value="首頁"></a>
+            </div>
+            <div id="musicButton">
+                <input id="music" class="button" type="button" onclick="music();" value="播放音樂">
             </div>
             <div id="startButton">
-                <input id="start" class="button" type="button" onclick="Start();" value="開始"></input>
+                <input id="start" class="button" type="button" onclick="Start();" value="開始">
             </div>
             <div id="resetButton">
-                <input id="reset" class="button" type="button" onclick="Reset();" value="重置"></input>
+                <input id="reset" class="button" type="button" onclick="Reset();" value="重置">
             </div>
             <div id="gameNotOver" class="overlay">
                 <div class="popup">
@@ -48,16 +51,23 @@
                     <div class="content">
                         <div id="result"></div>
                         <div id="homeButton_popup">
-                            <a href="index.html"><input id="home" class="button" type="button" value="回首頁"></input></a>
+                            <a><input id="home" class="button" type="button" value="回首頁"></a>
                         </div>
                         <div id="oneMoreButton_popup">
-                            <a href="game_default_score.html"><input id="oneMore" class="button" type="button" value="再來一場"></input></a>
+                            <a><input id="oneMore" class="button" type="button" value="再來一場"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <audio id="default_music">
+        <source src="default.mp3">
+    </audio>
+    <audio id="button_sound">
+        <source src="button.mp3">
+    </audio>
 
     <script type="text/javascript" src="js/game/map.js"></script>
     <script type="text/javascript" src="js/game/piece_score.js"></script>
