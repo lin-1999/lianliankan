@@ -68,6 +68,7 @@ body {
     position: relative;
     cursor: pointer;
     float: left;
+    cursor: default;
 }
 
 #pieces .track {
