@@ -17,6 +17,12 @@
     position: absolute;
 }
 
+#musicButton {
+    left: 6.5%;
+    top: 60%;
+    position: absolute;
+}
+
 #homeButton_popup {
     left: 20%;
     top: 70%;
@@ -64,6 +70,18 @@
     background: #22c461;
     box-shadow: 0 4px 1px #22c461;
     border-bottom: 2px solid #1fba5b;
+}
+
+#music {
+    background: #ebdc1b;
+    box-shadow: 0 5px 0px #ebdc1b;
+    border-bottom: 2px solid #e2d31a;
+}
+
+#music:hover {
+    background: #e0d21b;
+    box-shadow: 0 4px 1px #e0d21b;
+    border-bottom: 2px solid #d6c91c;
 }
 
 #oneMore {
