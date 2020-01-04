@@ -173,8 +173,9 @@ var Game = {
         for (var i = 0; i < this.pieceImgList.length; i++) {
 
             this.pieceImgList[i].initImg();
-            this.pieceImgList[i].img.src = "img/game/pieces/default/" + this.randomList[i] + ".png"
-            this.pieceImgList[i].img.style = "border: 1px white ridge;"
+            this.pieceImgList[i].img.src = "img/game/pieces/default/" + this.randomList[i] + ".png";
+            this.pieceImgList[i].img.style = "border: 1px white ridge; cursor: pointer;";
+            this.pieceImgList[i].img.addEventListener("click", playButtonSound, false);
             this.pieceImgList[i].setImgSrc(this.pieceImgList[i].img.src);
 
             //執行圖片點選事件
@@ -265,23 +266,53 @@ var Game = {
 
 }
 
-window.onload = function() {
+var isPlaying;
+var back_music;
+var buttonSound;
 
+window.onload = function() {
     document.getElementById("start").disabled = false;
     document.getElementById("reset").disabled = true;
-
+    document.getElementById("home").addEventListener("click", backHome, false);
+    document.getElementById("start").addEventListener("click", playButtonSound, false);
+    document.getElementById("reset").addEventListener("click", playButtonSound, false);
+    document.getElementById("oneMore").addEventListener("click", oneMoreGame, false);
+    back_music = document.getElementById("default_music");
+    buttonSound = document.getElementById("button_sound");
+    isPlaying = false;
 }
 
 // 遊戲開始入口
-function Start() {
-
-    Game.start();
-
-}
+function Start() { Game.start(); }
 
 // 遊戲重置入口
-function Reset() {
+function Reset() { Game.reset(); }
 
-    Game.reset();
-
+function music(){
+    buttonSound.play();
+    
+    if(!isPlaying){
+        back_music.play();
+        isPlaying = true;
+        document.getElementById("music").value = "暫停音樂";
+    }
+    else{
+        back_music.pause();
+        isPlaying = false;
+        document.getElementById("music").value = "播放音樂";
+    }
 }
+
+function backHome() {
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = 'index.html'; }, 200);
+}
+
+function oneMoreGame() {
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = 'game_default_score.html'; }, 200);
+}
+
+function playButtonSound() { buttonSound.play(); }
