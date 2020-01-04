@@ -275,6 +275,7 @@ window.onload = function() {
     document.getElementById("home").addEventListener("click", backHome, false);
     document.getElementById("start").addEventListener("click", playButtonSound, false);
     document.getElementById("reset").addEventListener("click", playButtonSound, false);
+    document.getElementById("oneMore").addEventListener("click", oneMoreGame, false);
     back_music = document.getElementById("digimon_music");
     buttonSound = document.getElementById("button_sound");
     isPlaying = false;
@@ -305,6 +306,12 @@ function backHome() {
     buttonSound.play();
     
     setTimeout(function(){ location.href = 'index.html'; }, 200);
+}
+
+function oneMoreGame() {
+    buttonSound.play();
+    
+    setTimeout(function(){ location.href = 'game_digimon_score.html'; }, 200);
 }
 
 function playButtonSound() { buttonSound.play(); }
