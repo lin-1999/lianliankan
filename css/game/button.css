@@ -1,13 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 #startButton {
     left: 85%;
-    top: 45%;
+    top: 37%;
     position: absolute;
 }
 
 #resetButton {
     left: 85%;
-    top: 60%;
+    top: 52%;
+    position: absolute;
+}
+
+#quickButton {
+    left: 84.5%;
+    top: 67%;
     position: absolute;
 }
 
@@ -72,6 +78,18 @@
     border-bottom: 2px solid #1fba5b;
 }
 
+#backHome {
+    background: #24d368;
+    box-shadow: 0 5px 0px #24d368;
+    border-bottom: 2px solid #1fc660;
+}
+
+#backHome:hover {
+    background: #22c461;
+    box-shadow: 0 4px 1px #22c461;
+    border-bottom: 2px solid #1fba5b;
+}
+
 #music {
     background: #ebdc1b;
     box-shadow: 0 5px 0px #ebdc1b;
@@ -118,4 +136,17 @@
     background: #c12323;
     box-shadow: 0 4px 1px #c12323;
     border-bottom: 2px solid #ac2d2d;
+}
+
+#quick {
+    background: white;
+    box-shadow: 0 5px 0px white;
+    border-bottom: 2px solid #f5f5f5;
+    color: black;
+}
+
+#quick:hover {
+    background: #f0f0f0;
+    box-shadow: 0 4px 1px #f0f0f0;
+    border-bottom: 2px solid #e8e8e8;
 }
