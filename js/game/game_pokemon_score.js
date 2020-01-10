@@ -71,6 +71,19 @@ var Game = {
         }
 
     },
+    
+    quick: function() {
+        
+        this.isGameOver = true;
+        this.isShowResult = true;
+        
+        if  (this.isShowResult) {
+            var popup = document.getElementById("gameNotOver");
+            document.getElementById("result").innerHTML = "0分";
+            popup.setAttribute("id", "gameOver");
+        }
+        
+    },
 
     reset: function() {
 
@@ -274,8 +287,10 @@ window.onload = function() {
     document.getElementById("start").disabled = false;
     document.getElementById("reset").disabled = true;
     document.getElementById("home").addEventListener("click", backHome, false);
+    document.getElementById("backHome").addEventListener("click", backHome, false);
     document.getElementById("start").addEventListener("click", playButtonSound, false);
     document.getElementById("reset").addEventListener("click", playButtonSound, false);
+    document.getElementById("quick").addEventListener("click", playButtonSound, false);
     document.getElementById("oneMore").addEventListener("click", oneMoreGame, false);
     back_music = document.getElementById("pokemon_music");
     buttonSound = document.getElementById("button_sound");
@@ -287,6 +302,8 @@ function Start() { Game.start(); }
 
 // 遊戲重置入口
 function Reset() { Game.reset(); }
+
+function Quick() { Game.quick(); }
 
 function music(){
     buttonSound.play();
